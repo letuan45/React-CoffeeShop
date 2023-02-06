@@ -1,0 +1,160 @@
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media-item {
+  font-size: 1.6rem;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.social-media-item a i {
+  color: var(--main);
+  transition: all 0.2s;
+}
+
+.social-media-item:hover a i {
+  color: var(--white);
+}
+
+.footer-item p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: start;
+  padding-right: 100px;
+  font-family: "Jost", sans-serif;
+}
+
+.wrapper {
+  background-position: 50% 0%;
+  background-size: cover;
+  position: relative;
+}
+
+.footer-item__header {
+  font-size: 2.4rem;
+  text-align: start;
+  font-weight: 700;
+  color: var(--main);
+  position: relative;
+}
+
+.footer-item__header::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: var(--main);
+  bottom: 0;
+  left: 0;
+}
+
+.footer-contacts {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts__item {
+  display: flex;
+  margin-top: 26px;
+}
+
+.footer-contacts__item i {
+  font-size: 2.4rem;
+  color: var(--main);
+  display: block;
+  margin-right: 10px;
+}
+
+.footer-contacts__item a {
+  font-size: 1.5rem;
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+}
+
+.footer-addr {
+  padding-right: 40px;
+}
+
+.footer-contacts__item a span:nth-child(2) {
+  color: var(--white);
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+
+.subcribe-form {
+  position: relative;
+  width: 100%;
+}
+
+.subcribe-btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.subcribe-btn-group button {
+  height: 100%;
+}
+
+.subcribe-btn-group p {
+  text-align: center;
+  color: var(--white);
+  margin: 0;
+}
+
+.subcribe-label {
+  margin-top: 15px;
+  display: flex;
+}
+
+.subcribe-label a {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.author {
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 24px 0 20px 0;
+}
+
+.author span {
+  color: var(--main);
+}
+
+@media (max-width: 992px) {
+  .footer-item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-item p {
+    padding: 0;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .last {
+    display: none !important;
+  }
+}

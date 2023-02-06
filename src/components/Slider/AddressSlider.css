@@ -1,0 +1,44 @@
+.slider {
+  width: 100%;
+}
+
+.coffee-bag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-hour {
+  padding: 0;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.open-header {
+  font-size: 4rem;
+  line-height: 10rem;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--main);
+}
+
+.open-list {
+  padding: 10px 0 !important;
+}
+
+.open-list li {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.open-list li strong {
+  font-size: 2rem;
+}
+
+.open-list li strong:nth-child(2) {
+  color: var(--main);
+}
+
+.closed {
+  color: #d12323 !important;
+}

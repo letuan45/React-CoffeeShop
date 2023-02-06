@@ -1,0 +1,43 @@
+.btn {
+  padding: 16px 20px;
+  min-width: 200px !important;
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.8rem !important;
+  background-color: var(--main);
+  border-radius: 48px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  width: fit-content;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.black:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.disabled div {
+  top: 12px;
+}

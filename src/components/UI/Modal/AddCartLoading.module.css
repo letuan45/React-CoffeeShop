@@ -1,0 +1,152 @@
+.header {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--main);
+  border-bottom: 4px dotted var(--black);
+  color: var(--white);
+}
+
+.sub-header {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapper {
+  width: 650px;
+  padding-bottom: 50px;
+  background-color: var(--white);
+  z-index: 21;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) scale(0);
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.show {
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.cup {
+  margin-top: 120px;
+  height: 140px;
+  width: 180px;
+  border: 6px solid var(--white);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 0px 0px 70px 70px;
+  box-shadow: 0px 0px 0px 6px black;
+  background-repeat: repeat-x;
+  background-position: 0px 140px;
+  animation: fill 5.8s infinite;
+  animation-delay: 0.2s;
+}
+
+.handle {
+  height: 70px;
+  width: 40px;
+  background-color: transparent;
+  border: 6px solid black;
+  position: relative;
+  left: 174px;
+  top: 2px;
+  border-radius: 0px 25px 80px 0px;
+}
+
+.success-header {
+  margin-top: 30px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.image {
+  width: 25%;
+  margin-top: 10px;
+}
+
+.image img {
+  border-radius: 15px;
+  border: 2px solid var(--grey);
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-info {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cart-info span {
+  font-weight: 600;
+  color: var(--main);
+}
+
+.close {
+  background-color: transparent;
+  font-size: 2rem;
+  margin-top: 25px;
+  border: 4px solid var(--main);
+  border-radius: 36px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.close:hover {
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.down-side-bg {
+  background-color: #e7d8c9;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 42%;
+  z-index: -1;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+
+@keyframes fill {
+  0% {
+    background-position: 0px 140px;
+  }
+  20% {
+    background-position: -450px 100px;
+  }
+  40% {
+    background-position: -900px 50px;
+  }
+  80% {
+    background-position: -1350px -40px;
+  }
+  100% {
+    background-position: 0px 140px;
+  }
+}
+
+@media (max-width: 756px) {
+  .wrapper {
+    width: 450px;
+  }
+}

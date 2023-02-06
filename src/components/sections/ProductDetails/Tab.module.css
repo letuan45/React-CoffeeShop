@@ -1,0 +1,20 @@
+.wrapper {
+  padding-top: 100px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-item a {
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.tab-item a.active {
+  border-bottom: 2px solid var(--main);
+}
+
+.tab-item:not(:first-child):not(:last-child) {
+  margin: 0 30px;
+}

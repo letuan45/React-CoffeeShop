@@ -1,0 +1,144 @@
+.wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  z-index: 20;
+  right: 0;
+  transition: all 0.3s ease-in;
+  background-color: #e5e5e5;
+  transform: translateX(100%);
+}
+
+.wrapper.active {
+  transform: translateX(0);
+}
+
+.header {
+  background-color: var(--main);
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.icon-group {
+  margin-left: 12px;
+  height: 100%;
+  position: relative;
+}
+
+.x-icon {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: black;
+  transform-origin: center;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.x-icon:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.x-icon:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-btn:hover .x-icon:nth-child(1),
+.close-btn:hover .x-icon:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+
+.empty {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty i {
+  font-size: 3rem;
+  color: var(--main);
+}
+
+.empty p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+
+.content-body {
+  height: 100%;
+  padding: 10px 20px 20px 20px;
+}
+
+.cart-list-wrapper {
+  height: 65%;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.summary span {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.subtotal-header {
+  display: block;
+  font-weight: 600;
+}
+
+.subtotal {
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+}
+
+.controls a {
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.cart-list-wrapper {
+  padding: 15px 0;
+}
+
+.cart-list {
+  margin: 0;
+  overflow: auto;
+  height: 100%;
+}

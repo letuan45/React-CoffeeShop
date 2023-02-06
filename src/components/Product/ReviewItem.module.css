@@ -1,0 +1,46 @@
+.item {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--grey);
+  display: flex;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.user-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info {
+  color: var(--main);
+  font-size: 1.6rem;
+}
+
+.user-info strong,
+.user-info span {
+  font-family: "Jost", sans-serif;
+}
+
+.user-info__dash {
+  color: var(--grey);
+  font-size: 1.8rem;
+}
+
+.review-date {
+  color: var(--grey);
+}
+
+.user-comment {
+  color: var(--white);
+  font-size: 1.6rem;
+}

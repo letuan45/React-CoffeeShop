@@ -1,0 +1,50 @@
+.item {
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px dotted var(--grey);
+  position: relative;
+  font-family: "Jost", sans-serif;
+}
+
+.image img {
+  width: 120px;
+}
+
+.desc {
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--white);
+  transition: all 0.2s;
+}
+
+.name:hover {
+  color: var(--main);
+}
+
+.total {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.remove {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--main);
+  transition: all 0.3s;
+}
+
+.remove:hover {
+  color: var(--red);
+}

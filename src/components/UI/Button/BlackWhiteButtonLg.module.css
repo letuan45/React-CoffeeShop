@@ -1,0 +1,53 @@
+.btn {
+  padding: 22px 30px;
+  min-width: 260px !important;
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.8rem !important;
+  background-color: black;
+  border-radius: 48px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.btn p {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.btn::before {
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--white);
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover::before {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn:hover p {
+  color: black;
+}

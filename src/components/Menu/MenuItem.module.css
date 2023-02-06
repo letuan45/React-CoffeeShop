@@ -1,0 +1,72 @@
+.menu-item {
+  padding-right: 70px;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.item-image {
+  width: 130px;
+  height: 100px;
+  padding-right: 30px;
+}
+
+.item-image img {
+  max-width: 100px;
+  height: auto;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-title .item-name {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+  word-wrap: break-word;
+  letter-spacing: -0.5px;
+  font-family: "Poppins", serif;
+}
+
+.item-title .three-dots {
+  flex: 1;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+  margin: 0px 15px 0;
+  position: relative;
+  top: -8px;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+
+.item-title .item-price {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--main);
+}
+
+.item-desc {
+  margin-top: 8px;
+}
+
+.item-desc p {
+  line-height: 1.7rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .menu-item {
+    padding-right: 40px;
+  }
+}

@@ -1,0 +1,103 @@
+.modal-card {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 450px;
+  z-index: 100;
+  background-color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-70%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  padding: 50px 40px;
+}
+
+.register {
+  width: 650px;
+}
+
+.main-form {
+  margin-top: 20px;
+}
+
+.main-form label {
+  margin-top: 12px;
+}
+
+.header-content {
+  font-size: 3.5rem;
+  background-color: var(--main);
+  text-align: center;
+}
+
+.active {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.footer span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.footer button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 5px;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.close i {
+  transition: all 0.3s;
+  font-size: 3rem;
+}
+
+.close:hover i {
+  color: var(--red);
+}
+
+label {
+  margin: 10px 0 0 0 !important;
+}
+
+.register .main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+.btn-group {
+  width: 100% !important;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 680px) {
+  .register {
+    width: 450px;
+  }
+}

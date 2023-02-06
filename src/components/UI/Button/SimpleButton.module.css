@@ -1,0 +1,21 @@
+.btn {
+  background-color: transparent;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 1.6rem;
+  color: black;
+  padding: 6px 16px 7px 16px;
+  transition: color 0.3s;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.btn:hover {
+  color: var(--main);
+}
+
+.btn.active {
+  color: var(--main);
+  border-radius: 48px;
+  border: 2px solid var(--main);
+}

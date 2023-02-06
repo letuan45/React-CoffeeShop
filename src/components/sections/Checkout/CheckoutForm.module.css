@@ -1,0 +1,196 @@
+.wrapper {
+  padding: 120px 0;
+}
+
+.empty {
+  padding: 18px 36px;
+  background-color: var(--grey);
+  font-size: 2.2rem;
+  font-family: "Jost", sans-serif;
+  border-top: 6px solid var(--main);
+  margin-bottom: 30px;
+}
+
+.button-group a:nth-child(2) {
+  margin-left: 40px;
+}
+
+.header {
+  font-size: 2.6rem;
+  color: var(--main);
+}
+
+.sub-wrapper {
+  margin-top: 30px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-top: 20px;
+  display: inline;
+}
+
+.control-input {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: var(--grey);
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  font-family: "Jost", sans-serif;
+  margin: 10px 0 20px 0;
+}
+
+.form-wrapper {
+  padding: 85px 70px;
+  border: 1px solid var(--grey);
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.control-form {
+  width: 80%;
+}
+
+.control-text {
+  width: 100% !important;
+  padding: 10px 15px;
+  background-color: var(--grey);
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  font-family: "Jost", sans-serif;
+  resize: vertical;
+  height: 160px;
+}
+
+.order-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid var(--grey);
+  font-size: 1.8rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.order-table tr,
+.order-table th,
+.order-table td {
+  height: 40px;
+  border: 1px solid var(--grey);
+}
+
+.total {
+  color: var(--main);
+}
+
+.methods-list {
+  margin-top: 10px !important;
+}
+
+.payment-method_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--grey);
+  margin-bottom: 20px;
+}
+
+.payment-method_item input {
+  margin: 0;
+  position: relative;
+}
+
+.payment-method_item label {
+  margin-bottom: 0;
+  margin-top: 2px;
+  margin-left: 10px;
+  color: var(--white);
+  cursor: pointer;
+  position: relative;
+  left: 25px;
+  display: inline-block;
+}
+
+.payment-method_item input:checked ~ label::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: var(--main);
+  top: 4px;
+  left: -21px;
+}
+
+.payment-method_item label::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+  border: 2px solid var(--main);
+}
+
+.payment-des {
+  font-size: 1.6rem;
+  color: var(--grey);
+  margin-top: 10px;
+}
+
+.payment-method_item input:checked,
+.payment-method_item input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.paypal {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.error {
+  color: var(--red);
+  display: inline;
+  font-size: 1.8rem;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group a:nth-child(2) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-wrapper {
+    padding: 35px;
+    border: none;
+  }
+
+  .wrapper {
+    padding: 20px 0;
+  }
+
+  .form-wrapper form {
+    width: 100%;
+  }
+}

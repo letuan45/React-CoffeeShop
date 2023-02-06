@@ -1,0 +1,19 @@
+.notify-wapper {
+  position: absolute;
+  font-size: 2rem;
+  left: 50%;
+  font-weight: bold;
+  transform: translateX(-50%);
+  display: block;
+  width: 80%;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  top: 10px;
+  background: #2ec4b6;
+}
+
+.notify-wapper.error {
+  background-color: var(--red);
+  color: var(--white);
+}

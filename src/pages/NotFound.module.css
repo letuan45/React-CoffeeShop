@@ -1,0 +1,62 @@
+.logo {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+}
+
+.number {
+  font-size: 35rem;
+  color: var(--white);
+}
+
+.head {
+  margin-top: 80px;
+  height: 300px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.content i {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 50%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .number {
+    font-size: 25rem;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .number {
+    font-size: 15rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .head {
+    height: 200px;
+  }
+}

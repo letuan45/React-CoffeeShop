@@ -1,0 +1,57 @@
+.wrapper {
+  padding: 30px 40px;
+}
+
+.no-rv {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.no-rv i {
+  color: var(--main);
+  font-size: 1.8rem;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.form-wrapper {
+  margin-top: 40px;
+}
+
+.form-wrapper form {
+  padding: 50px;
+  background-color: #555353;
+}
+
+.form-wrapper h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.login-required {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.review-list {
+  max-height: 728px;
+  overflow: auto;
+}
+
+.validate-err {
+  margin-top: 10px;
+  color: var(--red);
+  font-weight: 500;
+  font-size: 1.8rem;
+}

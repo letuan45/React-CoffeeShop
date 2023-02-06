@@ -1,0 +1,24 @@
+.item a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding-bottom: 12px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.item a:hover {
+  color: var(--main);
+}
+
+.item a i {
+  color: var(--main);
+  margin-right: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .item a {
+    color: var(--black);
+  }
+}

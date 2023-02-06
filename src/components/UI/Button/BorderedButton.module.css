@@ -1,0 +1,18 @@
+.btn {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 12px 35px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+  transition: all 0.3s;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.btn:hover {
+  border-color: var(--main);
+  color: var(--main)
+}

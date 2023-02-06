@@ -1,0 +1,52 @@
+.item, .item-expanse {
+  margin: 10px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.item-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--main) !important;
+}
+
+.item a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  width: 100%;
+}
+
+.item a:hover {
+  color: var(--main);
+}
+
+.item:hover {
+  color: var(--main);
+}
+
+.item-expanse i {
+  transition: all 0.3s;
+}
+
+.item-expanse.active i {
+  transform: rotate(-90deg);
+}
+
+.submenu-item {
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 2rem;
+}
+
+.submenu-item a {
+  color: black;
+}
+
+

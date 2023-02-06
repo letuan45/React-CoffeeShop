@@ -1,0 +1,77 @@
+.item {
+  margin: 15px;
+}
+
+.item.custom-mar {
+  margin: 0 0 40px 0;
+} 
+
+.item a {
+  display: block;
+  position: relative;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.description a {
+  display: block;
+}
+
+.description a h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--main);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.image {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  transform: scaleX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.item a:hover .overlay {
+  transform: scaleX(1);
+}
+
+.item a:hover .button-group {
+  opacity: 1;
+  transform: translateY(50%) translateX(-50%);
+}
+
+.button-group {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
